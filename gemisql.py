@@ -9,13 +9,13 @@ from langchain.chains import create_sql_query_chain
 host = 'localhost'
 port = '3306'
 username = 'root'
-password = 'xxxxxxxxxxxxxxxx'
-database_schema = 'xxxxxxxxxxxxxxxx'
+password = 'school'
+database_schema = 'db_school'
 mysql_uri = f"mysql+pymysql://{username}:{password}@{host}:{port}/{database_schema}"
 db = SQLDatabase.from_uri(mysql_uri, sample_rows_in_table_info=2)
 
 # creer une chaine langchain
-llm = ChatGoogleGenerativeAI(model='gemini-pro', temperature=0.9)
+llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro', temperature=0.5)
 chain = create_sql_query_chain(llm, db)
 
 # Test the setup
