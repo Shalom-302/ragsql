@@ -1,0 +1,9 @@
+l'objectif c'est d'integrer un fichier csv dans une base de donnees sql
+puis connecter le llm gemini dans la base de donnees
+premiere etape : migrer un fichier csv dans une base de donnees: okay
+deuxieme etape : la base de donnees doit etre connecter au llm gemini :okay
+troisieme etape : gemini doit effectuer des requettes sql : okay
+
+Le fichier essai.py est un fichier pour tester le modele gemini avec langchain
+le fichier migration.py consite a integrer le fichier csv dans la base de donnees
+le fichier gemisql.py est le fichier de connexion de gemini dans mysql  
